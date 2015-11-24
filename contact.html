@@ -1,0 +1,90 @@
+
+<html>
+<head>
+  <title>Contact</title>
+    <script src="js/jquery.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.theme.min.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+  <link rel="stylesheet" href="css/leaflet.css" />
+  <script src="js/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script  src="js/sweetalert.min.js"></script>
+  
+  
+
+</head>
+
+<body style=" background-color:#F0FFF0;">
+
+  <table><tr>
+  <td><h1 style="font-style:Times New Roman;font-size:28;font-weight:bold;background-color:#008B8B;margin:auto;text-align:left; color: white;margin: auto; padding: 10px;width:1175px;">Palistha</h1></td>
+    <td><a href="#"><img src="fb.jpg" height="40px" width="40px"></a></td>
+   <td> <a href="#"><img src="tweet.jpg" height="40px" width="40px"></a></td>
+  <td><a href="#"><img src="insta.jpg" height="40px" width="40px"></a></td>
+  <td><a href="#"><img src="g.jpg" height="40px" width="40px"></a></td>
+</tr>
+</table>
+    <br>
+  <ul class="nav nav-pills nav-justified">
+  <li role="presentation" ><a href="#">Home</a></li>
+  <li role="presentation"><a href="about.html">About me</a></li>
+  <li role="presentation"><a href="skills.html">Skills and Achievement</a></li>
+  <li role="presentation"><a href="portfolio.html"> Portfolio</a></li>
+  <li role="presentation"><a href="contact.html">Contact me</a></li>
+</ul>
+<br>
+
+<h1 style="text-align:center;color:#4682b4;">Contact Me</h1>
+<hr color="green" width="50%" size="5">
+
+  <form>
+   
+  <form>
+  <div class = "col-sm-10">  
+    <label>Your name </label>
+    <input type="text" class="form-control" id="fname" placeholder="First Name">
+  </div>
+ <div class = "col-sm-10">
+    <label>Contact Number </label>
+    <input type="text" class="form-control" id="num" placeholder="Contact Number">
+  </div>
+<div class = "col-sm-10">
+    <label>Email </label>
+    <input type="text" class="form-control" id="email" placeholder="Email">
+  </div>
+ <div class = "col-sm-10">
+    <label>Message </label>
+    <textarea class="form-control" rows="5" id="comment"></textarea>
+  </div>  <br/>
+  <div class = "col-sm-10">
+  <br /><button type="submit" id="send-button"class="btn btn--primary">Send</button>
+  </div>
+</form>
+
+  <div id="qa_captcha_div_1">
+  <div class="g-recaptcha" data-sitekey="6LcRPhETAAAAAJqW98ChQu1LtdOKhCohEIvO8ha_"></div>
+</div>
+</form>
+
+<script>
+$("#send-button").on('click',function(){
+     swal("Good job!", "You clicked the button!", "success");
+     return false;
+   });
+
+</script>
+
+</body>
+</html>
